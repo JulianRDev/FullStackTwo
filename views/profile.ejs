@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <title>21 Savage Fan Site</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-poo-storm"></span> My Workouts</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+        
+          
+
+          <h2>Add a Workout</h2>
+        <% if (user.local.email) { %>
+          <form action="/workouts" method="POST">
+             <select name="muscles" id="">
+               <option value="chest">Chest</option>
+               <option value="back">Back</option>
+               <option value="legs">Legs</option>
+               <option value="arms">Arms</option>
+               <option value="shoulders">Shoulders</option>
+               <option value="abs">Abs</option>
+             </select>
+            <input type="text" placeholder="workout" name="workout">
+            <button type="submit">Submit</button>
+          </form>
+        
+        <% } %>
+
+</div>
+
+<section>
+  <!-- chest -->
+  <section class="sec sec1">
+    <h2>Chest</h2>
+    <% for(var i=0; i<chest.length; i++) {%>
+      <section class="entryzone">
+        
+        <span class="colorChange"><%= chest[i].workout %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+      </section>
+    <% } %>
+  </section>
+<!-- back -->
+  <section class="sec sec2">
+    <h2>Back</h2>
+    <% for(let i=0; i<back.length; i++) {%>
+      <section class="entryzone">
+        
+        <span class="colorChange"><%= back[i].workout %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+      </section>
+    <% } %>
+  </section>
+  <!-- legs -->
+  <section class="sec sec3">
+    <h2>Legs</h2>
+    <% for(let i=0; i<legs.length; i++) {%>
+      <section class="entryzone">
+        
+        <span class="colorChange"><%= legs[i].workout %></span>
+        <span ><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+      </section>
+    <% } %>
+  </section>
+</section>
+
+
+
+<section>
+  <!-- Arms -->
+  <section class="sect sect1">
+    <h2>Arms</h2>
+    <% for(let i=0; i<arms.length; i++) {%>
+      <section class="entryzone">
+        
+        <span class="colorChange"><%= arms[i].workout %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+      </section>
+    <% } %>
+  </section>
+  <!-- shoulders -->
+  <section class="sect sect2">
+    <h2>Shoulders</h2>
+    <% for(let i=0; i<shoulders.length; i++) {%>
+      <section class="entryzone">
+        
+        <span class="colorChange"><%= shoulders[i].workout %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+      </section>
+    <% } %>
+  </section>
+  <!-- Abs -->
+  <section class="sect sect3">
+    <h2>Abs</h2>
+    <% for(let i=0; i<abs.length; i++) {%>
+      <section class="entryzone">
+        
+        
+        <span class="colorChange"><%= abs[i].workout %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+      </section>
+    <% } %>
+  </section>
+</section>
+
+<script src="main.js"></script>
+
+</body>
+</html>

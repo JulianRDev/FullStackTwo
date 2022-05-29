@@ -1,0 +1,31 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url(img/workoutbackground.jpeg);
+  color: rgb(94, 255, 0);
+  text-align: center;
+}
+img{
+  height: 200px;
+}
+.jumbotron{
+  background-color:rgba(255, 255, 255,.05);
+}
+
+.sec,.sect{
+  float: left;
+  border: 1px solid white;
+  height: 200px;
+  width: 100px;
+  background-color: rgb(255, 255, 255, .4);
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: .2em .2em 4px red;
+}
+.sec1,.sec2,.sec3,.sect1,.sect2,.sect3{
+  width: 33.3%;
+}
+
+.red{
+  color: red;
+}
