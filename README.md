@@ -1,6 +1,6 @@
 
 <section>
-  <h1 align="center">Workout Log/h1>
+  <h1 align="center">Workout Log</h1>
 <p align="center">
   This is a full-stack web application that a user can create a profile on. Once the user has logged into their account they may add workouts to their profile page and they will go into their respective section based on the muscle group the user chooses. The user can click the thumbs up button to add a check mark to the workout to indicate it was completed. Workouts may also be deleted by the delete button.
 </p>
