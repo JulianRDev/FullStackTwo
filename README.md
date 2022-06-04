@@ -1,8 +1,8 @@
 
 <section>
-  <h1 align="center"> Journal Entries</h1>
+  <h1 align="center">Workout Log/h1>
 <p align="center">
-  This is a full-stack web application that a user can create a profile on. Once the user has logged into their account they may create journal entries. Each journal entry has a different background color and text color based on the mood the user chooses. The user can click the pencil button to edit their journal entry if needed. Any journal entry may deleted upon clicking the delete button.
+  This is a full-stack web application that a user can create a profile on. Once the user has logged into their account they may add workouts to their profile page and they will go into their respective section based on the muscle group the user chooses. The user can click the thumbs up button to add a check mark to the workout to indicate it was completed. Workouts may also be deleted by the delete button.
 </p>
 
 <section align="center">
@@ -18,4 +18,4 @@
 <p align="center"> HTML, CSS, Javascript, Express, Node.js, Mongodb </p>
 
 <h2 align="center"> Lessons Learned </h2>
-<p align="center"> Getting more practice with CRUD has been a blast and creating projects like this really do excite me. I am beginning to see other creative ways I can approah each project and better understand the connections between all things client and server side.  </p>
+<p align="center"> As Someone who loves going to the gym regularly this was especially fun to build. A place where i could log all my workouts and check them off as needed. Each workout logged will go to their respective section based on the category the user chooses. Once all the workouts are done they can be deleted. </p
